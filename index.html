@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/modal.js"></script>
     <title>Página teste usando HTML e CSS</title>
 </head>
 <body>
+    
+    <!-- .........................MODAL.......................  -->
+            <div class="janela_escura">
+                <div class="modal">
+                    <div class="fechar" onclick="fechar_modal()">X</div>
+                        <form>
+                            <legend> <h2> Cadastre-se </h2> </legend>
+                            <br />
+                                <label>Digite seu nome: 
+                                <input type="text" size="30" maxlength="30"  />
+                                </label><br />
+                                <label>Digite seu e-mail: 
+                                <input type="mail" size="30" maxlength="30"  />
+                                </label><br />
+                                <label>Seu gênero: 
+                                <select name="genero">
+                                    <option>masculino</option>
+                                    <option>feminino</option>
+                                    <option>outro</option>
+                                </select>
+                                </label><br />
+
+                                <label>Digite sua senha:
+                                <input type="password" size="8" />
+                                </label>
+                                <input type="submit" value="enviar" class="enviar" />
+                            
+                            </form>
+                    </div>
+            </div>
+<!-- .........................FIM DO MODAL.......................  -->
+
+
     <!-- main: determinar o tamanho do site e alinhar ele -->
     <main>
         <header id="cabecalho">
@@ -19,20 +53,70 @@
                 </nav>
 
                 <div id="logo">
-                    <img src="assets/assets/images/figura1.png" alt="">
+                    <img src="/assets/images/figura1.png" alt="">
                 </div>
 
                 <nav id="menu_direito">
                     <a href="#" class="link1"> <img src="/assets/images/figura4.png" alt=""> </a>
                     <a href="#" class="link2">Conectar</a>
-                    <a href="#" class="link3">Cadastre-se Gratuitamente</a>
+                    <a href="#" class="link3" onclick="abrir_modal()">Cadastre-se Gratuitamente</a>
                 </nav>
 
         </header>
+        <section id="meio">
 
-            <section id="meio">MEIO</section>
+                <section id="lado_esquerdo">
+
+                            <h1 id="titulo_meio" class="texto">
+                                As lojas do Mailchimp já estão disponíveis
+                            </h1>
+
+                            <p>
+                                Impulsione as vendas, envolva os clientes e anuncie seu negócio em um lugar só. Crie sua loja virtual gratuitamente
+                            </p>
+
+                        <a href="#" class="link4"> Saiba Mais </a>
+
+                </section>
+
+                    <section id="lado_direito">
+
+                            <div id="big_mood">
+
+                                <div id="topo">
+                                    <img src="/Aula 1/assets/images/tres_pontinhos.png" alt="">
+                                    <img src="/Aula 1/assets/images/carrinho.png" alt="" class="direita">
+                                </div>
+                                
+                                <h3>Big Mood</h3>
+
+                                <div id="figura">
+                                    <img src="/Aula 1/assets/images/figura2.png" alt="">
+                                </div>
+                                
+                            </div>
+
+                                <div id="shopping_cart">
+                                    
+                                    <p>Shopping Cart</p>
+
+                                    <div id="figura_cart">
+                                        <img src="/Aula 1/assets/images/figua3.png" alt="">
+                                    </div>
+
+                                    <div id="checkout">Continue to checkout</div>
+
+                                </div>
+                        
+                    </section>
+
+            </section>
 
             <footer id="rodape">RODAPÉ</footer>
+
+            <!-- Início do modal -->
+            <!-- tela janela escura transparente no fundo do modal  -->
+
     </main>
 
 </body>

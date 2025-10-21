@@ -1,3 +1,6 @@
+*{
+    background-color: #c5dbf2;
+}
 
 main {
     position: relative;
@@ -22,17 +25,14 @@ main {
     position: relative;
     width: 100%;
     height: 500px;
-    background-color: rgb(178, 65, 157);
     margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#rodape {
-    position: relative;
-    width: 100%;
-    height: 35px;
-    background-color: rgb(144, 24, 130);
-    margin: auto;
-}
+
 
 #menu {
     position:relative;
@@ -84,6 +84,7 @@ main {
     text-align: center;
     font-size: 12px;
     color: #000000;
+    border: 1px solid #000;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     width: 100px;
@@ -94,7 +95,8 @@ main {
     font-weight: bold;
 }
 
-.link3 {
+.link3, 
+.link4 {
     text-align: center;
     font-size: 12px;
     color: #000000;
@@ -103,8 +105,200 @@ main {
     background-color: #5c8ec4;
     width: 200px;
     height: auto;
- 
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: bold;
+}
+
+.link4{
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#lado_esquerdo p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #191818;
+    height: 100px;
+}
+
+#titulo_meio {
+    color: #1b1b1b;
+    height: 130px;
+    font-size: 50px;
+    
+}
+
+#lado_direito {
+    position: relative;
+    width: 50%;
+    height: 400px;
+}
+
+#big_mood {
+    position: relative;
+    width: 85%;
+    height: 330px;
+    background-color: #FFE4E1;
+    border-radius: 3%;
+    border: 1px solid;
+    padding: 1%;
+    
+}
+
+#big_mood h3, #figura {
+    background-color: transparent;
+}
+
+#big_mood h3 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: #FA8072;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#topo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.direita {
+    float: right;
+}
+
+#shopping_cart {
+    position: absolute;
+    width: 40%;
+    height: 212px;
+    background-color: #FFF;
+    border-radius: 5%;
+    border: 2px solid;
+    top: 150px;
+    left: 260px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+#shopping_cart p, #figura_cart, #checkout {
+    background-color: transparent;
+}
+
+#shopping_cart p {
+    width: 96%;
+    background-color: #F8F8FF;
+    border-bottom: 2px solid;
+}
+
+#figura_cart {
+    position: relative;
+    width: 96%;
+    height: 130px;
+    background-color: #F8F8F9;
+}
+
+#figura_cart img {
+    width: 100%;
+    height: 100%;
+}
+
+#checkout {
+    position: relative;
+    width: 70%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #13615E;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    border-radius: 8%;
+}
+
+#rodape {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: #8a2be2;
+    margin: auto;
+}
+
+/* .....................MODAL.....................  */
+
+.janela_escura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 50, 50, 70%);
+    z-index: 10;
+    visibility: hidden;
+
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    background-color: #f0f8ff;
+    text-align: center;
+    border: 2px solid;
+    z-index: 20;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.fechar {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    float: right;
+    cursor: pointer;
+    border: 1px solid;
+    color: #000;
+
+}
+
+form{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width:380px;
+    height: 320px;
+    padding:20px;
+	border:3px solid;
+	display:flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+    
+}
+
+h2{
+	text-align: center;
+}
+
+input, select{
+	border:1px solid;
+	/* background-color: #7093ac;*/
+	padding:3px;
+}
+
+.enviar{
+	width:80px;
+	padding:10px;
+	border-radius: 5px;
+	margin:auto;
 }
